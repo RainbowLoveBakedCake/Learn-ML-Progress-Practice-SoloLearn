@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.datasets import load_breast_cancer
+from sklearn.linear_model import LogisticRegression
 cancer_data = load_breast_cancer()
 
 #showing object in dataset
@@ -12,7 +13,7 @@ columns=cancer_data['feature_names']
 print(df.head())
 
 #build logistic regression model
-X = df[cancer_data.feature_name].values
+X = df[cancer_data.feature_names].values
 y = df['target'].values
 
 model = LogisticRegression()
