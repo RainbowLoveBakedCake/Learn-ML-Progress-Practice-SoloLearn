@@ -1,4 +1,4 @@
-import matplotlib as plt
+import matplotlib.pylot as plt
 import numpy as np
 from sklearn.datasets import fetch_openml
 from sklearn.neural_network import MLPClassifier
